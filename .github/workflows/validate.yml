@@ -1,0 +1,45 @@
+name: Validate portfolio data
+
+# Sanity-checks data/portfolio_data.json on every push so a malformed export
+# can't silently corrupt the portfolio backend. Pure validation — never writes.
+
+on:
+  push:
+    paths:
+      - 'data/portfolio_data.json'
+  workflow_dispatch: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON shape
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          p = "data/portfolio_data.json"
+          with open(p) as f:
+              d = json.load(f)   # fails loudly if not valid JSON
+          required = ["schema", "generatedAt", "portfolio", "transactions"]
+          missing = [k for k in required if k not in d]
+          if missing:
+              print("MISSING KEYS:", missing); sys.exit(1)
+          if not str(d["schema"]).startswith("valuatio-portfolio"):
+              print("Unexpected schema:", d["schema"]); sys.exit(1)
+          if not isinstance(d["portfolio"], list):
+              print("portfolio is not a list"); sys.exit(1)
+          if not isinstance(d["transactions"], list):
+              print("transactions is not a list"); sys.exit(1)
+          # Spot-check transaction records have ids (the import unions by id).
+          for i, t in enumerate(d["transactions"][:100]):
+              if "id" not in t:
+                  print(f"transaction {i} missing id"); sys.exit(1)
+          c = d.get("counts", {})
+          print(f"OK — {len(d['portfolio'])} positions, "
+                f"{len(d['transactions'])} transactions, "
+                f"cash {d.get('cashPosition', 0)}")
+          PY
