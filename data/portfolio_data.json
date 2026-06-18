@@ -1,0 +1,11 @@
+{
+  "schema": "valuatio-portfolio/v1",
+  "generatedAt": "2026-06-17T00:00:00.000Z",
+  "counts": { "portfolio": 0, "holdings": 0, "watching": 0, "tracking": 0, "avoid": 0, "transactions": 0 },
+  "cashPosition": 0,
+  "portfolio": [],
+  "byRole": { "holdings": [], "watching": [], "tracking": [], "avoid": [], "other": [] },
+  "transactions": [],
+  "goodGlobeIndex": null,
+  "goodGlobeCurve": null
+}
