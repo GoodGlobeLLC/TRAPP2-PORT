@@ -1,11 +1,59 @@
-{
-  "schema": "valuatio-portfolio/v1",
-  "generatedAt": "2026-06-17T00:00:00.000Z",
-  "counts": { "portfolio": 0, "holdings": 0, "watching": 0, "tracking": 0, "avoid": 0, "transactions": 0 },
-  "cashPosition": 0,
-  "portfolio": [],
-  "byRole": { "holdings": [], "watching": [], "tracking": [], "avoid": [], "other": [] },
-  "transactions": [],
-  "goodGlobeIndex": null,
-  "goodGlobeCurve": null
-}
+[
+  {
+    "id": "AAPL-1781936903316-x44nv",
+    "addedAt": "2025-12-22T12:00:00.000Z",
+    "ticker": "AAPL",
+    "position": "Long",
+    "qty": 100,
+    "costBasis": 270.97,
+    "fees": 0,
+    "notes": [
+      {
+        "ts": "2025-12-22T12:00:00.000Z",
+        "text": "Bought 100 @ $270.97 on 2025-12-22 · Good entry",
+        "priceAtNote": 270.97,
+        "backdated": true
+      }
+    ],
+    "_source": "modal"
+  },
+  {
+    "id": "TSM-1781937043950-06834",
+    "addedAt": "2026-06-20T06:30:43.950Z",
+    "ticker": "TSM",
+    "position": "Tracking",
+    "notes": [
+      {
+        "ts": "2026-06-20T06:30:43.949Z",
+        "text": "Added to Tracking from Valuation tab @ $462.12",
+        "priceAtNote": 462.119995
+      }
+    ]
+  },
+  {
+    "id": "GLD-1781937135894-jo5t4",
+    "addedAt": "2026-06-20T06:32:15.894Z",
+    "ticker": "GLD",
+    "position": "Tracking",
+    "notes": [
+      {
+        "ts": "2026-06-20T06:32:15.893Z",
+        "text": "Added to Tracking from Valuation tab @ $387.12",
+        "priceAtNote": 387.119995
+      }
+    ]
+  },
+  {
+    "id": "NVDA-1781937467206-7lrqh",
+    "addedAt": "2026-06-20T06:37:47.206Z",
+    "ticker": "NVDA",
+    "position": "Tracking",
+    "notes": [
+      {
+        "ts": "2026-06-20T06:37:47.203Z",
+        "text": "Added to Tracking from Valuation tab @ $210.69",
+        "priceAtNote": 210.690002
+      }
+    ]
+  }
+]
