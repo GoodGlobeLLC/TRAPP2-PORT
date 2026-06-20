@@ -55,5 +55,23 @@
         "priceAtNote": 210.690002
       }
     ]
+  },
+  {
+    "id": "SNK-1781937967070-uogkm",
+    "addedAt": "2026-06-20T12:00:00.000Z",
+    "ticker": "SNK",
+    "position": "Long",
+    "qty": 2000,
+    "costBasis": 15.97,
+    "fees": 40,
+    "notes": [
+      {
+        "ts": "2026-06-20T12:00:00.000Z",
+        "text": "Bought 2000 @ $15.97 on 2026-06-20 · Short",
+        "priceAtNote": 15.97,
+        "backdated": false
+      }
+    ],
+    "_source": "modal"
   }
 ]
