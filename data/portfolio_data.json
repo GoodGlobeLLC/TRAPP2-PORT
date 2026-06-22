@@ -1,77 +1,284 @@
-[
-  {
-    "id": "AAPL-1781936903316-x44nv",
-    "addedAt": "2025-12-22T12:00:00.000Z",
-    "ticker": "AAPL",
-    "position": "Long",
-    "qty": 100,
-    "costBasis": 270.97,
-    "fees": 0,
-    "notes": [
+{
+  "schema": "valuatio-portfolio/v1",
+  "generatedAt": "2026-06-22T04:46:30.492Z",
+  "counts": {
+    "portfolio": 5,
+    "holdings": 0,
+    "watching": 1,
+    "tracking": 2,
+    "avoid": 0,
+    "transactions": 2
+  },
+  "cashPosition": 10000,
+  "portfolio": [
+    {
+      "id": "GLD-1781937135894-jo5t4",
+      "addedAt": "2026-06-20T06:32:15.894Z",
+      "ticker": "GLD",
+      "position": "Tracking",
+      "notes": [
+        {
+          "ts": "2026-06-20T06:32:15.893Z",
+          "text": "Added to Tracking from Valuation tab @ $387.12",
+          "priceAtNote": 387.119995
+        }
+      ]
+    },
+    {
+      "id": "NVDA-1781937467206-7lrqh",
+      "addedAt": "2026-06-20T06:37:47.206Z",
+      "ticker": "NVDA",
+      "position": "Tracking",
+      "notes": [
+        {
+          "ts": "2026-06-20T06:37:47.203Z",
+          "text": "Added to Tracking from Valuation tab @ $210.69",
+          "priceAtNote": 210.690002
+        }
+      ]
+    },
+    {
+      "id": "SNK-1781937967070-uogkm",
+      "addedAt": "2026-06-20T12:00:00.000Z",
+      "ticker": "SNK",
+      "position": "Long",
+      "qty": 2000,
+      "costBasis": 15.97,
+      "fees": 40,
+      "notes": [
+        {
+          "ts": "2026-06-20T12:00:00.000Z",
+          "text": "Bought 2000 @ $15.97 on 2026-06-20 · Short",
+          "priceAtNote": 15.97,
+          "backdated": false
+        }
+      ],
+      "_source": "modal"
+    },
+    {
+      "id": "AAPL-1782101366221-bvz3g",
+      "addedAt": "2025-12-30T12:00:00.000Z",
+      "ticker": "AAPL",
+      "position": "Long",
+      "qty": 100,
+      "costBasis": 273.08,
+      "fees": 30,
+      "notes": [
+        {
+          "ts": "2025-12-30T12:00:00.000Z",
+          "text": "Bought 100 @ $273.08 on 2025-12-30 · Good entry",
+          "priceAtNote": 273.08,
+          "backdated": true
+        }
+      ],
+      "_source": "modal"
+    },
+    {
+      "qty": null,
+      "fees": 0,
+      "name": "Taiwan Semiconductor Manufacturing Company Limited",
+      "notes": [],
+      "pnlPct": 0,
+      "sector": "Technology",
+      "ticker": "TSM",
+      "_source": "modal",
+      "addedAt": "2026-06-22T12:00:00.000Z",
+      "position": "Watching",
+      "costBasis": 462.12,
+      "livePrice": 462.12,
+      "returnPct": 0,
+      "assetClass": "equity",
+      "conviction": 52,
+      "id": "TSM-legacy-6-2026-06-22"
+    }
+  ],
+  "byRole": {
+    "holdings": [],
+    "watching": [
       {
-        "ts": "2025-12-22T12:00:00.000Z",
-        "text": "Bought 100 @ $270.97 on 2025-12-22 · Good entry",
-        "priceAtNote": 270.97,
-        "backdated": true
+        "qty": null,
+        "fees": 0,
+        "name": "Taiwan Semiconductor Manufacturing Company Limited",
+        "notes": [],
+        "pnlPct": 0,
+        "sector": "Technology",
+        "ticker": "TSM",
+        "_source": "modal",
+        "addedAt": "2026-06-22T12:00:00.000Z",
+        "position": "Watching",
+        "costBasis": 462.12,
+        "livePrice": 462.12,
+        "returnPct": 0,
+        "assetClass": "equity",
+        "conviction": 52,
+        "id": "TSM-legacy-6-2026-06-22"
       }
     ],
-    "_source": "modal"
-  },
-  {
-    "id": "TSM-1781937043950-06834",
-    "addedAt": "2026-06-20T06:30:43.950Z",
-    "ticker": "TSM",
-    "position": "Tracking",
-    "notes": [
+    "tracking": [
       {
-        "ts": "2026-06-20T06:30:43.949Z",
-        "text": "Added to Tracking from Valuation tab @ $462.12",
-        "priceAtNote": 462.119995
-      }
-    ]
-  },
-  {
-    "id": "GLD-1781937135894-jo5t4",
-    "addedAt": "2026-06-20T06:32:15.894Z",
-    "ticker": "GLD",
-    "position": "Tracking",
-    "notes": [
+        "id": "GLD-1781937135894-jo5t4",
+        "addedAt": "2026-06-20T06:32:15.894Z",
+        "ticker": "GLD",
+        "position": "Tracking",
+        "notes": [
+          {
+            "ts": "2026-06-20T06:32:15.893Z",
+            "text": "Added to Tracking from Valuation tab @ $387.12",
+            "priceAtNote": 387.119995
+          }
+        ]
+      },
       {
-        "ts": "2026-06-20T06:32:15.893Z",
-        "text": "Added to Tracking from Valuation tab @ $387.12",
-        "priceAtNote": 387.119995
-      }
-    ]
-  },
-  {
-    "id": "NVDA-1781937467206-7lrqh",
-    "addedAt": "2026-06-20T06:37:47.206Z",
-    "ticker": "NVDA",
-    "position": "Tracking",
-    "notes": [
-      {
-        "ts": "2026-06-20T06:37:47.203Z",
-        "text": "Added to Tracking from Valuation tab @ $210.69",
-        "priceAtNote": 210.690002
-      }
-    ]
-  },
-  {
-    "id": "SNK-1781937967070-uogkm",
-    "addedAt": "2026-06-20T12:00:00.000Z",
-    "ticker": "SNK",
-    "position": "Long",
-    "qty": 2000,
-    "costBasis": 15.97,
-    "fees": 40,
-    "notes": [
-      {
-        "ts": "2026-06-20T12:00:00.000Z",
-        "text": "Bought 2000 @ $15.97 on 2026-06-20 · Short",
-        "priceAtNote": 15.97,
-        "backdated": false
+        "id": "NVDA-1781937467206-7lrqh",
+        "addedAt": "2026-06-20T06:37:47.206Z",
+        "ticker": "NVDA",
+        "position": "Tracking",
+        "notes": [
+          {
+            "ts": "2026-06-20T06:37:47.203Z",
+            "text": "Added to Tracking from Valuation tab @ $210.69",
+            "priceAtNote": 210.690002
+          }
+        ]
       }
     ],
-    "_source": "modal"
+    "avoid": [],
+    "other": [
+      {
+        "id": "SNK-1781937967070-uogkm",
+        "addedAt": "2026-06-20T12:00:00.000Z",
+        "ticker": "SNK",
+        "position": "Long",
+        "qty": 2000,
+        "costBasis": 15.97,
+        "fees": 40,
+        "notes": [
+          {
+            "ts": "2026-06-20T12:00:00.000Z",
+            "text": "Bought 2000 @ $15.97 on 2026-06-20 · Short",
+            "priceAtNote": 15.97,
+            "backdated": false
+          }
+        ],
+        "_source": "modal"
+      },
+      {
+        "id": "AAPL-1782101366221-bvz3g",
+        "addedAt": "2025-12-30T12:00:00.000Z",
+        "ticker": "AAPL",
+        "position": "Long",
+        "qty": 100,
+        "costBasis": 273.08,
+        "fees": 30,
+        "notes": [
+          {
+            "ts": "2025-12-30T12:00:00.000Z",
+            "text": "Bought 100 @ $273.08 on 2025-12-30 · Good entry",
+            "priceAtNote": 273.08,
+            "backdated": true
+          }
+        ],
+        "_source": "modal"
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "id": "tx-1782099038659-c4plw",
+      "ts": "2026-06-22T03:30:38.659Z",
+      "type": "buy",
+      "ticker": "SNK",
+      "qty": 2000,
+      "price": 15.97,
+      "fee": 30,
+      "cost": 31970,
+      "proceeds": 0,
+      "realizedPL": 0,
+      "entryId": "SNK-1782099038647-jzvn1",
+      "entryDate": "2026-06-22T12:00:00.000Z",
+      "entryPrice": 15.97,
+      "notes": "Good entry"
+    },
+    {
+      "id": "tx-1782101366224-i4hsh",
+      "ts": "2026-06-22T04:09:26.224Z",
+      "type": "buy",
+      "ticker": "AAPL",
+      "qty": 100,
+      "price": 273.08,
+      "fee": 30,
+      "cost": 27338,
+      "proceeds": 0,
+      "realizedPL": 0,
+      "entryId": "AAPL-1782101366221-bvz3g",
+      "entryDate": "2025-12-30T12:00:00.000Z",
+      "entryPrice": 273.08,
+      "notes": "Good entry"
+    }
+  ],
+  "goodGlobeIndex": {
+    "SNK": {
+      "flags": [
+        "Long",
+        "Traded"
+      ],
+      "notes": "Bought 2000 @ $15.97 on 2026-06-22 · Good entry",
+      "source": "modal",
+      "ticker": "SNK",
+      "trades": [
+        {
+          "at": "2026-06-22T03:30:38.659Z",
+          "fee": 30,
+          "qty": 2000,
+          "kind": "buy",
+          "isOption": false,
+          "exitPrice": 15.97,
+          "entryPrice": 15.97,
+          "multiplier": 1,
+          "realizedPL": 0
+        }
+      ],
+      "winRate": 0,
+      "winCount": 0,
+      "assetType": "equity",
+      "entryDate": "2026-06-22T03:30:38.647Z",
+      "lossCount": 0,
+      "entryPrice": 15.97,
+      "realizedPL": 0,
+      "tradeCount": 1,
+      "lastFlaggedAt": "2026-06-22T03:30:38.661Z",
+      "firstFlaggedAt": "2026-06-22T03:30:38.647Z"
+    },
+    "TSM": {
+      "flags": [
+        "Watching"
+      ],
+      "notes": null,
+      "source": "modal",
+      "ticker": "TSM",
+      "assetType": "equity",
+      "entryDate": "2026-06-22T03:26:19.570Z",
+      "entryPrice": 462.119995,
+      "lastFlaggedAt": "2026-06-22T03:26:19.570Z",
+      "firstFlaggedAt": "2026-06-22T03:26:19.570Z"
+    }
+  },
+  "goodGlobeCurve": {
+    "level": [
+      {
+        "date": "2026-06-22",
+        "level": 100,
+        "members": 2
+      }
+    ],
+    "priceSnaps": {
+      "_last": {
+        "date": "2026-06-22",
+        "prices": {
+          "SNK": 15.97,
+          "TSM": 462.119995
+        }
+      }
+    }
   }
-]
+}
