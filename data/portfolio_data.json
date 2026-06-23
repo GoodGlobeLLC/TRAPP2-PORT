@@ -1,15 +1,15 @@
 {
   "schema": "valuatio-portfolio/v1",
-  "generatedAt": "2026-06-22T04:46:30.492Z",
+  "generatedAt": "2026-06-22T23:34:08.043Z",
   "counts": {
-    "portfolio": 5,
+    "portfolio": 4,
     "holdings": 0,
     "watching": 1,
     "tracking": 2,
     "avoid": 0,
-    "transactions": 2
+    "transactions": 4
   },
-  "cashPosition": 10000,
+  "cashPosition": 94640,
   "portfolio": [
     {
       "id": "GLD-1781937135894-jo5t4",
@@ -36,24 +36,6 @@
           "priceAtNote": 210.690002
         }
       ]
-    },
-    {
-      "id": "SNK-1781937967070-uogkm",
-      "addedAt": "2026-06-20T12:00:00.000Z",
-      "ticker": "SNK",
-      "position": "Long",
-      "qty": 2000,
-      "costBasis": 15.97,
-      "fees": 40,
-      "notes": [
-        {
-          "ts": "2026-06-20T12:00:00.000Z",
-          "text": "Bought 2000 @ $15.97 on 2026-06-20 · Short",
-          "priceAtNote": 15.97,
-          "backdated": false
-        }
-      ],
-      "_source": "modal"
     },
     {
       "id": "AAPL-1782101366221-bvz3g",
@@ -145,24 +127,6 @@
     "avoid": [],
     "other": [
       {
-        "id": "SNK-1781937967070-uogkm",
-        "addedAt": "2026-06-20T12:00:00.000Z",
-        "ticker": "SNK",
-        "position": "Long",
-        "qty": 2000,
-        "costBasis": 15.97,
-        "fees": 40,
-        "notes": [
-          {
-            "ts": "2026-06-20T12:00:00.000Z",
-            "text": "Bought 2000 @ $15.97 on 2026-06-20 · Short",
-            "priceAtNote": 15.97,
-            "backdated": false
-          }
-        ],
-        "_source": "modal"
-      },
-      {
         "id": "AAPL-1782101366221-bvz3g",
         "addedAt": "2025-12-30T12:00:00.000Z",
         "ticker": "AAPL",
@@ -214,41 +178,46 @@
       "entryDate": "2025-12-30T12:00:00.000Z",
       "entryPrice": 273.08,
       "notes": "Good entry"
+    },
+    {
+      "id": "tx-1782171181417-akuyl",
+      "ts": "2026-06-22T23:33:01.417Z",
+      "type": "sell",
+      "ticker": "SNK",
+      "qty": 2000,
+      "price": 21.16,
+      "fee": 0,
+      "proceeds": 42320,
+      "realizedPL": 10379.999999999998,
+      "realizedPLPct": 32.49843456480902,
+      "entryId": "SNK-1781937967070-uogkm",
+      "entryDate": "2026-06-20T12:00:00.000Z",
+      "entryPrice": 15.97,
+      "soldDate": "2026-06-22T23:33:01.411Z",
+      "notes": null,
+      "positionNotes": [
+        {
+          "ts": "2026-06-20T12:00:00.000Z",
+          "text": "Bought 2000 @ $15.97 on 2026-06-20 · Short",
+          "priceAtNote": 15.97,
+          "backdated": false
+        }
+      ]
+    },
+    {
+      "id": "tx-1782171181419-e8595",
+      "ts": "2026-06-22T23:33:01.419Z",
+      "type": "sell",
+      "ticker": "SNK",
+      "qty": 2000,
+      "price": 21.16,
+      "fee": 0,
+      "proceeds": 42320,
+      "entryId": "SNK-1781937967070-uogkm",
+      "reason": "position-removed"
     }
   ],
   "goodGlobeIndex": {
-    "SNK": {
-      "flags": [
-        "Long",
-        "Traded"
-      ],
-      "notes": "Bought 2000 @ $15.97 on 2026-06-22 · Good entry",
-      "source": "modal",
-      "ticker": "SNK",
-      "trades": [
-        {
-          "at": "2026-06-22T03:30:38.659Z",
-          "fee": 30,
-          "qty": 2000,
-          "kind": "buy",
-          "isOption": false,
-          "exitPrice": 15.97,
-          "entryPrice": 15.97,
-          "multiplier": 1,
-          "realizedPL": 0
-        }
-      ],
-      "winRate": 0,
-      "winCount": 0,
-      "assetType": "equity",
-      "entryDate": "2026-06-22T03:30:38.647Z",
-      "lossCount": 0,
-      "entryPrice": 15.97,
-      "realizedPL": 0,
-      "tradeCount": 1,
-      "lastFlaggedAt": "2026-06-22T03:30:38.661Z",
-      "firstFlaggedAt": "2026-06-22T03:30:38.647Z"
-    },
     "TSM": {
       "flags": [
         "Watching"
@@ -259,8 +228,47 @@
       "assetType": "equity",
       "entryDate": "2026-06-22T03:26:19.570Z",
       "entryPrice": 462.119995,
-      "lastFlaggedAt": "2026-06-22T03:26:19.570Z",
+      "lastFlaggedAt": "2026-06-22T23:33:12.203Z",
       "firstFlaggedAt": "2026-06-22T03:26:19.570Z"
+    },
+    "GLD": {
+      "ticker": "GLD",
+      "assetType": "etf",
+      "firstFlaggedAt": "2026-06-22T23:33:12.201Z",
+      "lastFlaggedAt": "2026-06-22T23:33:12.201Z",
+      "flags": [
+        "Tracking"
+      ],
+      "source": "portfolio",
+      "notes": "Added to Tracking from Valuation tab @ $387.12",
+      "entryPrice": 384.589996,
+      "entryDate": "2026-06-22T23:33:12.201Z"
+    },
+    "NVDA": {
+      "ticker": "NVDA",
+      "assetType": "equity",
+      "firstFlaggedAt": "2026-06-22T23:33:12.202Z",
+      "lastFlaggedAt": "2026-06-22T23:33:12.202Z",
+      "flags": [
+        "Tracking"
+      ],
+      "source": "portfolio",
+      "notes": "Added to Tracking from Valuation tab @ $210.69",
+      "entryPrice": 208.649994,
+      "entryDate": "2026-06-22T23:33:12.202Z"
+    },
+    "AAPL": {
+      "ticker": "AAPL",
+      "assetType": "equity",
+      "firstFlaggedAt": "2026-06-22T23:33:12.203Z",
+      "lastFlaggedAt": "2026-06-22T23:33:12.203Z",
+      "flags": [
+        "Long"
+      ],
+      "source": "portfolio",
+      "notes": "Bought 100 @ $273.08 on 2025-12-30 · Good entry",
+      "entryPrice": 273.08,
+      "entryDate": "2026-06-22T23:33:12.203Z"
     }
   },
   "goodGlobeCurve": {
@@ -268,15 +276,17 @@
       {
         "date": "2026-06-22",
         "level": 100,
-        "members": 2
+        "members": 4
       }
     ],
     "priceSnaps": {
       "_last": {
         "date": "2026-06-22",
         "prices": {
-          "SNK": 15.97,
-          "TSM": 462.119995
+          "TSM": 467.670013,
+          "AAPL": 297.01001,
+          "NVDA": 208.649994,
+          "GLD": 384.589996
         }
       }
     }
