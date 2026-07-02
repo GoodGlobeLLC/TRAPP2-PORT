@@ -7,6 +7,8 @@ on:
   push:
     paths:
       - 'data/probability_data.json'
+  schedule:
+    - cron: '5 * * * *'        # hourly at :05
   workflow_dispatch:
 
 jobs:
