@@ -13,6 +13,8 @@ on:
   push:
     paths:
       - 'data/portfolio_data.json'
+  schedule:
+    - cron: '5 * * * *'        # hourly at :05
   workflow_dispatch: {}
 
 jobs:
